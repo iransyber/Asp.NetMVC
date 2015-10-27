@@ -14,5 +14,10 @@ namespace SystemDevelopment.Contexto
             : base(stringConexao)
         { 
         }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
