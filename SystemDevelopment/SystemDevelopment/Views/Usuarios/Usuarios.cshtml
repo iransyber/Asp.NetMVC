@@ -1,7 +1,25 @@
 ﻿<div ng-controller="myCntrl">
-    <link   href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
-    
+
     <h1>Lista de Usuarios</h1>
-</div>
+
+    <br />
+    <input type="button" class="btn btn-default" value="Adicionar" ng-click="AddEmployeeDiv()" />
+
+
+    <div class="divList">
+        <br />
+        <br />
+        <table cellpadding="12" class="table table-bordered table-hover">
+            <tr>
+                <td><b>ID</b></td>
+                <td><b>Name</b></td>
+                <td><b>Email</b></td>
+                <td><b>Age</b></td>
+                <td><b>Actions</b></td>
+            </tr>
+        </table>
+    </div>
+  </div>
