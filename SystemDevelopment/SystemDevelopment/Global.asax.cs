@@ -9,7 +9,7 @@ using System.Web.Routing;
 
 namespace SystemDevelopment
 {
-    public class MvcApplication : System.Web.HttpApplication
+    public class MvcApplication : HttpApplication
     {
         protected void Application_Start()
         {
@@ -18,6 +18,7 @@ namespace SystemDevelopment
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            AutoMapperConfig.RegisterMappings();
         }
     }
 }
